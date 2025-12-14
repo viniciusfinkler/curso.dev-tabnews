@@ -1,10 +1,10 @@
+import { useState } from "react";
+
 function Home() {
     return <div className="container">
                 <div className="header">
-                  <h1>Você foi escolhido como cobaia do novo projeto que estou fazendo.</h1>
-                  <div className="subheader">
-                    <h2>Então dá play no vídeo e aproveita pra dançar ao som de MC Andinho:</h2>
-                  </div>
+                  <h1>Você foi escolhido como cobaia do meu novo projeto.</h1>
+                  <h2>Então dá play no vídeo e aproveita pra dançar ao som de MC Andinho:</h2>
                 </div>
                 <div className="body">
                     <img src="https://25.media.tumblr.com/tumblr_maiks37LUo1qj9zwno1_250.gif" alt="Gato dançante"/>
@@ -32,19 +32,13 @@ function Home() {
                 font-size: 50px;
                 background-color: black;
                 color: white;
+                margin: 8px;
             }
-            
-            .subheader {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-                
-                h2 {
-                    font-size: 36px;
-                    background-color: black;
-                    color: white;
-                }
+            h2 {
+                font-size: 36px;
+                background-color: black;
+                color: white;
+                margin: 8px;
             }
           }
           .body {
