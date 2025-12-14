@@ -1,36 +1,64 @@
 function Home() {
     return <div className="container">
-        <div className="header">
-            <h1>PARABÉNS! Você foi escolhido como cobaia do projeto novo que estou fazendo.</h1>
-            <h2>Aproveita para assistir o Mini Messi em ação:.</h2>
-            <img src="https://i.makeagif.com/media/12-07-2023/M2o1oi.gif"
-             alt="Mini Messi"/>  
-        </div>  
+                <div className="header">
+                  <h1>Você foi escolhido como cobaia do novo projeto que estou fazendo.</h1>
+                  <div className="subheader">
+                    <h2>Então dá play no vídeo e aproveita pra dançar ao som de MC Andinho:</h2>
+                  </div>
+                </div>
+                <div className="body">
+                    <img src="https://25.media.tumblr.com/tumblr_maiks37LUo1qj9zwno1_250.gif" alt="Gato dançante"/>
+                    <iframe width="560" height="400" src="https://www.youtube.com/embed/fOYHfvREq_8?si=tsUHEJjFKYkT0nIZ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                    <img src="https://25.media.tumblr.com/tumblr_maiks37LUo1qj9zwno1_250.gif" alt="Gato dançante"/>
+                </div>
         <style jsx>{`
         .container {
-          margin: 50px;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-        }
-        .header {
+          gap: 64px;
+          background-image: url('https://i.pinimg.com/originals/34/ac/31/34ac31c2ab7103586c407ec93ee15e7d.gif');
+          background-size: cover; 
+          height: 100vh;
+          overflow: hidden;
+          padding: 16px;
+          margin:0;
+
+          .header {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h1 {
-                color: red;
+                font-size: 50px;
+                background-color: black;
+                color: white;
             }
+            
             .subheader {
                 display: flex;
-                gap: 8px;
                 align-items: center;
                 justify-content: center;
+                gap: 8px;
+                
+                h2 {
+                    font-size: 36px;
+                    background-color: black;
+                    color: white;
+                }
             }
-        }
-        img {
-            height: 400px;
-            widht: 300px;
+          }
+          .body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+
+            img {
+                height: 400px;
+                width: 200px;
+            }
+          }
         }
       `}</style>
     </div>;
