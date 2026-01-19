@@ -19,21 +19,21 @@ function Home() {
           <b>viagem dos sonhos</b> se tornará muito melhor partindo daqui.
         </p>
         <div className="content">
-          <button className="action">
-            <img
-              src={githubLogoBlack.src}
-              width={40}
-              height={40}
-              alt="GitHub logo"
-            />
-            <a
-              className="link"
-              target="_blank"
-              href="https://github.com/viniciusfinkler/clone-tabnews"
-            >
-              Acompanhe pelo GitHub
-            </a>
-          </button>
+          <a
+            className="link"
+            target="_blank"
+            href="https://github.com/viniciusfinkler/clone-tabnews"
+          >
+            <button className="action">
+              <img
+                src={githubLogoBlack.src}
+                width={40}
+                height={40}
+                alt="GitHub logo"
+              />
+              <span className="buttonLabel">Acompanhe pelo GitHub</span>
+            </button>
+          </a>
         </div>
       </div>
       <style jsx>
@@ -119,10 +119,13 @@ function Home() {
               background-color: lightgray;
             }
 
-            .link {
-              text-decoration: none;
+            .buttonLabel {
               color: black;
               font-size: 18px;
+            }
+
+            .link {
+              text-decoration: none;
             }
           }
         `}
